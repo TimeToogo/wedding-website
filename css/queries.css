@@ -12,9 +12,6 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .hero .hero-content {
-        padding-top: 50%;
-    }
 }
 
 /* Responsive nav kicks in */
@@ -22,10 +19,6 @@
     header {
         width: 90%;
         padding-left: 25px;
-    }
-
-    .hero .hero-content {
-        padding-top: 50%;
     }
 
     .header-nav {
@@ -253,8 +246,20 @@
 }
 
 @media screen and (max-width: 640px) {
+    header {
+        padding: 20px 0;
+    }
+
+    .hero {
+        min-height: 400px;
+    }
+
     .hero .hero-content {
-        padding-top: 100%;
+        margin-top: 85%;
+    }
+
+    .navicon {
+        top: 28px;
     }
 
     #eng-pics .img-wrap i {
@@ -292,10 +297,6 @@
 }
 
 @media screen and (max-width: 480px) {
-    .hero .hero-content {
-        padding-top: 110%;
-    }
-    
     .hero .hero-content img {
         width: 65%;
     }
@@ -356,10 +357,6 @@
 }
 
 @media screen and (max-width: 320px) {
-    .hero .hero-content {
-        padding-top: 130%;
-    }
-
     .rsvp {
         padding-top: 20px;
     }
