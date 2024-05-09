@@ -252,18 +252,10 @@ Hero
 ========================================================================== */
 .hero {
   min-height: 750px;
-  background: url('../img/hero-min.jpg') center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: url('../img/hero.jpg') center center #111;
+  background-size: contain;
   position: relative;
 
-  /*.rsvp-btn {
-    position: absolute;
-    bottom: 100px;
-    left: 50%;
-  }*/
   .down-arrow a {
     color: $txt-light;
   }
@@ -278,7 +270,9 @@ Hero
     margin-bottom: 80px;
   }
   .hero-content {
-    padding-top: 40%;
+    margin-top: 55%;
+    font-style: italic;
+    background: rgba(0,0,0,0.5);
   }
   .hero-content img {
     width: 55%;
@@ -290,12 +284,16 @@ Hero
   position: fixed;
   width: 100%;
   z-index: 999;
+  background: rgba(0,0,0,0.75);
 }
 .fixed {
   position: fixed;
   background-color: rgba(55, 36, 40, .88);
   z-index: 999;
   width: 100%;
+}
+.bonza {
+  font-family: "Cedarville Cursive", cursive;
 }
 header {
   padding: 50px 0;
@@ -316,9 +314,14 @@ header {
   }
   .logo {
     display: inline-block;
+    font-family: "Cedarville Cursive", cursive;
+    vertical-align: middle;
   }
   .logo img {
     height: 19px;
+  }
+  .logo a {
+    font-size: 24px;
   }
   ul.primary-nav {
     margin: 0 0 0 75px;
@@ -332,7 +335,7 @@ header {
         padding-right: 25px;
 
         &:hover {
-          color: $accent-color;
+          color: #aaa;
         }
       }
       &:last-child a {
@@ -348,7 +351,7 @@ header {
         color: $txt-light;
 
         &:hover {
-          color: $accent-color;
+          color: #aaa;
         }
       }
     }
@@ -668,7 +671,6 @@ Engagement Pics
   .img-wrap {
     position: relative;
     overflow: hidden;
-    border-radius: 4px;
   }
   .img-wrap .overlay {
     position: absolute;
@@ -795,6 +797,11 @@ RSVP form
       border-radius: 3px;
       width: 100%;
       font-size: 13px;
+
+      &:hover {
+        background: #aaa;
+        color: $white-color;
+      }
     }
     .form-input-group {
       width: 100%;
