@@ -318,7 +318,17 @@
                             </div>
                             <div class="col-md-6 col-sm-12">
                                 <div class="form-input-group">
-                                    <i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code"
+                                    <i class="fa fa-check"></i>
+                                    <select name="attending" class="" required>
+                                        <option value="" disabled selected>Attending?</option>
+                                        <option value="yes">Attending: Yes</option>
+                                        <option value="no">Attending: No</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 hidden">
+                                <div class="form-input-group">
+                                    <i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code" value="260924"
                                         class="" min="0" placeholder="Invite code" required>
                                 </div>
                             </div>
